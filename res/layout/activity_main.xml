@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    >
+
+ <RelativeLayout
+     android:id="@+id/myBack"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:background="@drawable/text_main" >
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="20dp"
+         android:text="@string/intro"
+         android:textColor="#FFFFFF"
+         android:textSize="16dp" />
+     
+     <TextView
+         android:id="@+id/textView2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignTop="@+id/textView1"
+         android:layout_marginTop="31dp"
+         android:paddingLeft="5dp"
+         android:paddingRight="5dp"
+         android:text="@string/gameintro"
+         android:textColor="#FFFFFF"
+         android:textSize="16dp" />
+
+     <ToggleButton
+         android:id="@+id/toggleButton1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignRight="@+id/textView1"
+         android:layout_below="@+id/textView2"
+         android:layout_marginTop="31dp"
+         android:background="@drawable/send_layout"
+         android:checked="true"
+         android:padding="8dp"
+         android:text="ToggleButton" />
+
+     <TextView
+         android:id="@+id/TextView01"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/textView1"
+         android:layout_below="@+id/toggleButton1"
+         android:layout_marginTop="38dp"
+         android:text="Alert duration \n(in seconds):"
+         android:textColor="#FFFFFF" 
+          android:paddingLeft="5dp"
+         android:textSize="16dp"/>
+
+     <LinearLayout
+         android:id="@+id/linearLayout_focus"
+         android:layout_width="0px"
+         android:layout_height="0px"
+         android:focusable="true"
+         android:focusableInTouchMode="true"
+         android:orientation="vertical" />
+
+     <LinearLayout
+         android:id="@+id/linearLayout1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" 
+         android:orientation="vertical"/>
+
+     <TextView
+         android:id="@+id/textView3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/toggleButton1"
+         android:layout_alignBottom="@+id/toggleButton1"
+         android:layout_alignLeft="@+id/TextView01"
+         android:text="Turn on/off alerts:"
+         android:textSize="16dp"
+                  android:paddingLeft="5dp"
+         android:paddingRight="5dp"
+         android:textColor="#FFFFFF" />
+
+     <Button
+         android:id="@+id/button1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/editText1"
+         android:layout_alignBottom="@+id/editText1"
+         android:layout_alignRight="@+id/toggleButton1"
+         android:background="@drawable/send_layout"
+         android:padding="8dp"
+         android:paddingLeft="5dp"
+         android:paddingRight="5dp"
+         android:text="Submit"
+         android:textSize="12sp" />
+
+     <EditText
+         android:id="@+id/editText1"
+         android:layout_width="50dp"
+         android:layout_height="wrap_content"
+         android:layout_alignTop="@+id/TextView01"
+         android:layout_marginRight="18dp"
+         android:layout_toLeftOf="@+id/button1"
+         android:ems="10"
+         android:background="@drawable/reply_layout"
+         android:inputType="number"
+         android:padding="5sp"
+         android:windowSoftInputMode="stateHidden" >
+		
+         <requestFocus />
+     </EditText>
+
+     <TextView
+         android:id="@+id/myDisplay"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/editText1"
+         android:layout_alignTop="@+id/TextView03"
+         android:text="5 seconds"
+         android:textColor="#FFFFFF" />
+
+     <ToggleButton
+         android:id="@+id/Button01"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/TextView05"
+         android:layout_alignBottom="@+id/TextView05"
+         android:layout_alignLeft="@+id/button1"
+         android:background="@drawable/send_layout_random"
+         android:padding="5dp"
+         />
+
+     <Button
+         android:id="@+id/sendFeedback"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/feedbackResponse"
+         android:layout_marginTop="29dp"
+         android:layout_toRightOf="@+id/textView3"
+         android:background="@drawable/send_layout"
+         android:padding="8dp"
+         android:text="Submit" />
+
+     <TextView
+         android:id="@+id/TextView07"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/Button01"
+         android:layout_marginTop="37dp"
+         android:paddingLeft="5dp"
+         android:text="Disable SMS Alert Disappearance:"
+         android:textColor="#FFFFFF"
+         android:textSize="16dp" />
+
+     <EditText
+         android:id="@+id/feedbackResponse"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentRight="true"
+         android:layout_below="@+id/TextView06"
+         android:layout_marginTop="36dp"
+         android:background="@drawable/reply_layout"
+         android:ems="10"
+         android:inputType="textMultiLine"
+         android:lines="5"
+         android:padding="5sp" />
+
+     <CheckBox
+         android:id="@+id/checkBox1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/TextView07"
+         android:layout_alignBottom="@+id/TextView07"
+         android:layout_alignRight="@+id/Button01" />
+
+     <TextView
+         android:id="@+id/TextView08"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/textView1"
+         android:layout_below="@+id/checkBox1"
+         android:layout_marginTop="21dp"
+         android:paddingLeft="5dp"
+         android:text="SMS Alert will appear on the screen indefinitely long. Please use the close button on the top right of the alert to close!"
+         android:textColor="#FFFFFF"
+         android:visibility="invisible"
+         android:textSize="16dp" />
+
+     <TextView
+         android:id="@+id/TextView06"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/TextView08"
+         android:layout_marginTop="17dp"
+         android:paddingLeft="5dp"
+         android:text="Send an email with feedback, comments, problems, or what you want to see in the future!"
+         android:textColor="#FFFFFF"
+         android:textSize="16dp" />
+
+     <Button
+         android:id="@+id/Button04"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/Button03"
+         android:layout_alignBottom="@+id/Button03"
+         android:layout_alignParentRight="true"
+         android:background="@drawable/send_layout_light"
+         android:padding="8dp"
+         
+         android:text="Holo Light" />
+
+     <TextView
+         android:id="@+id/TextView02"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/button1"
+         android:layout_marginTop="14dp"
+         android:text="Send me an email with your questions, comments, concerns!"
+         android:textColor="#FFFFFF"
+         android:visibility="invisible" />
+
+     <Button
+         android:id="@+id/Button03"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/button3"
+         android:layout_marginTop="102dp"
+         android:background="@drawable/send_layout_dark"
+         android:padding="8dp"
+         android:textColor="#ffffff"
+         android:text="Holo Dark" />
+
+     <Button
+         android:id="@+id/Button02"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/button3"
+         android:layout_alignBottom="@+id/button3"
+         android:layout_alignParentRight="true"
+         android:background="@drawable/send_layout_purple"
+         android:padding="8dp"
+         
+         android:text="Purple" />
+
+     <TextView
+         android:id="@+id/TextView05"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/TextView02"
+         android:layout_marginTop="17dp"
+         android:paddingLeft="5dp"
+         android:text="Random Alert Colors:"
+         android:textColor="#FFFFFF"
+         android:textSize="16dp" />
+
+     <TextView
+         android:id="@+id/TextView03"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/TextView05"
+         android:layout_alignParentLeft="true"
+         android:paddingLeft="5dp"
+         android:text="Current Duration:"
+         android:textColor="#FFFFFF"
+         android:textSize="16dp" />
+
+     <TextView
+         android:id="@+id/TextView04"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/sendFeedback"
+         android:layout_marginTop="22dp"
+         android:paddingLeft="5dp"
+         android:text="Transparent Themes:"
+         android:textColor="#FFFFFF"
+         android:textSize="16dp" />
+
+     <Button
+         android:id="@+id/button3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/button2"
+         android:layout_alignBottom="@+id/button2"
+         android:layout_alignRight="@+id/editText1"
+         android:background="@drawable/send_layout_green"
+         android:padding="8dp"
+         android:text="Green" />
+
+     <TextView
+         android:id="@+id/TextView09"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/Button04"
+         android:layout_alignRight="@+id/TextView01"
+         android:layout_marginBottom="34dp"
+         android:paddingLeft="5dp"
+         android:text="Holo Themes:"
+         android:textColor="#FFFFFF"
+         android:textSize="16dp" />
+
+     <com.larswerkman.colorpicker.SVBar
+         android:id="@+id/svbar"
+         android:layout_width="125dp"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/opacitybar"
+         android:layout_marginTop="29dp" />
+
+     <com.larswerkman.colorpicker.OpacityBar
+         android:id="@+id/opacitybar"
+         android:layout_width="125dp"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/picker" />
+
+     <com.larswerkman.colorpicker.ColorPicker
+         android:id="@+id/picker"
+         android:layout_width="125dp"
+         android:layout_height="200dp"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/TextView10"
+         android:layout_marginTop="21dp"
+         android:padding="8dp" />
+
+     <com.larswerkman.colorpicker.SVBar
+         android:id="@+id/svbar2"
+         android:layout_width="125dp"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_below="@+id/picker2" />
+
+     <TextView
+         android:id="@+id/TextView10"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/Button03"
+         android:layout_marginTop="36dp"
+         android:paddingLeft="5dp"
+         android:text="Solid Colors:"
+         android:textColor="#FFFFFF"
+         android:textSize="16dp" />
+
+     <com.larswerkman.colorpicker.ColorPicker
+         android:id="@+id/picker2"
+         android:layout_width="125dp"
+         android:layout_height="200dp"
+         android:layout_above="@+id/opacitybar"
+         android:layout_alignParentRight="true"
+         android:paddingRight="-100dp" />
+
+     <com.larswerkman.colorpicker.ColorPicker
+         android:id="@+id/pickerBorder"
+         android:layout_width="125dp"
+         android:layout_height="200dp"
+         android:layout_alignTop="@+id/picker"
+         android:layout_toRightOf="@+id/picker"
+         android:padding="8dp"
+         android:visibility="invisible" />
+
+     <TextView
+         android:id="@+id/TextView11"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/picker"
+         android:layout_alignParentRight="true"
+         android:paddingLeft="5dp"
+         android:text="Font Colors:"
+         android:textColor="#FFFFFF"
+         android:textSize="16dp" />
+
+     <TextView
+         android:id="@+id/TextView12"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/picker"
+         android:layout_alignRight="@+id/myDisplay"
+         android:paddingLeft="5dp"
+         android:text="Border Colors:"
+         android:textColor="#FFFFFF"
+         android:textSize="16dp"
+         android:visibility="invisible" />
+
+     <com.larswerkman.colorpicker.SVBar
+         android:id="@+id/SVBar01"
+         android:layout_width="125dp"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/svbar"
+         android:layout_toRightOf="@+id/opacitybar" 
+         android:visibility="invisible"/>
+
+     <Button
+         android:id="@+id/button2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/TextView04"
+         android:layout_marginTop="26dp"
+         android:layout_toRightOf="@+id/linearLayout1"
+         android:background="@drawable/send_layout"
+         android:padding="8dp"
+         android:text="Blue" />
+
+ </RelativeLayout>
+
+</ScrollView>

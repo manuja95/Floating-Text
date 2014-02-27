@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<color name="textColor">#FFF</color>
+	<color name="textFieldColor">#000</color>
+	<color name="textShadow">#FFF</color>
+	<color name="listViewBg">#DADFEE</color>
+
+	<color name="sendLightColor">#E96d7899</color>
+	<color name="sendMeduimColor">#B6AFA9</color>
+	<color name="sendDarkColor">#E91A153B</color>
+
+	<color name="barDarkColor">#AFAAB3</color>
+	<color name="barMeduimColor">#DFDEE0</color>
+	<color name="barLightColor">#F2F2F2</color>
+	<color name="borderHoloDark">#157EAD</color>
+	<color name="black">#000000</color>
+	<color name="red">#DA0404</color>
+
+	<color name="sendLightColorGreen">#E9789A6D</color>
+	<color name="sendMeduimColorGreen">#B6AFA9</color>
+	<color name="sendDarkColorGreen">#E9153A1B</color>
+	
+	<color name="holoLight">#DDDDDD</color>
+	<color name="holoLightBorder">#33BBE5</color>
+	
+	<color name="sendLightColorBlack">#ff282828</color>
+	<color name="sendMeduimColorBlack">#B6AFA9</color>
+	<color name="sendDarkColorBlack">#ff282828</color>
+
+	<color name="sendLightColorPurple">#E98F6D9B</color>
+	<color name="sendMeduimColorPurple">#B6AFA9</color>
+	<color name="sendDarkColorPurple">#E93A1534</color>
+
+	
+	<color name="sendDark">#4F5C9C</color>
+	<color name="sendLight">#8897BF</color>
+	<color name="sendMedium">#8F9EC9</color>
+
+	<color name="sendDarkGreen">#60A051</color>
+	<color name="sendLightGreen">#97C089</color>
+	<color name="sendMediumGreen">#6CA65D</color>
+
+	<color name="sendDarkPurple">#9251A1</color>
+	<color name="sendLightPurple">#B38AC1</color>
+	<color name="sendMediumPurple">#985DA7</color>
+	
+	<color name="sendDarkRandom">#646C62</color>
+	<color name="sendLightRandom">#A6AFA3</color>
+	<color name="sendMediumRandom">#98A495</color>
+
+</resources>

@@ -1,0 +1,26 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_enabled="true"
+			android:state_pressed="true">
+        <shape android:padding="10dp" android:shape="rectangle">
+            <gradient android:startColor="@color/sendDarkPurple" android:endColor="@color/sendMediumPurple" android:angle="90"/>
+            <stroke android:width="2dp" android:color="#FFFFFF" />
+            <corners android:bottomLeftRadius="15dp" android:bottomRightRadius="15dp" android:topLeftRadius="15dp" android:topRightRadius="15dp" />
+        </shape>
+    </item>
+    <item android:state_enabled="true" android:state_focused="true">
+        <shape android:padding="10dp" android:shape="rectangle">
+            <gradient android:startColor="@color/sendDarkPurple" android:endColor="@color/sendMediumPurple" android:angle="90"/>
+            <stroke android:width="2dp" android:color="#FFFFFF" />
+            <corners android:bottomLeftRadius="15dp" android:bottomRightRadius="15dp" android:topLeftRadius="15dp" android:topRightRadius="15dp" />
+        </shape>
+    </item>
+    <item android:state_enabled="true">
+        <shape android:padding="10dp"
+            android:shape="rectangle">
+            <gradient android:startColor="@color/sendMediumPurple" android:endColor="@color/sendLightPurple" android:angle="90"/>
+            <stroke android:width="2dp" android:color="#FFFFFF" />
+            <corners android:bottomLeftRadius="15dp" android:bottomRightRadius="15dp" android:topLeftRadius="15dp" android:topRightRadius="15dp" />
+		</shape>
+    </item>
+</selector>

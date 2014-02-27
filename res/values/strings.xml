@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Floating Texts</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="name">Manuja Gunaratne</string>
+    <string name="reply">Reply</string>
+    <string name="intro">Thank you for downloading Floating Texts!\n\n</string>
+    <string name="gameintro">Floating Texts allows you to see your texts without stopping what you are doing! \n\nSo you can keep doing the things you love and still keep up with your text messages! </string>
+    <string name="features">Now you can: </string>
+    <string name="featureList"></string>
+    <string name="feedback">Let me know any errors you see or any feedback!</string>
+
+</resources>

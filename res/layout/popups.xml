@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popupbar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/title"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/title"
+        android:background="@drawable/button_layout"
+        android:textColor="#FFFFFF"
+	    android:text="X"
+	    android:textSize="18dp"     
+	    android:paddingLeft="-5dp"
+	    android:paddingTop="-5dp"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/text_pop_up_top"
+        android:gravity="center"
+        android:padding="2dp"
+        android:paddingTop="1dp"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/title"
+        android:background="@drawable/text_pop_up_bottom"
+        android:clickable="true"
+        android:fontFamily="Arial"
+        android:maxLines="2"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="30dp"
+        android:paddingBottom="10dp"
+        android:scrollbars="vertical"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" 
+        />
+
+    <RelativeLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/message" 
+        android:background="@drawable/message_bar"
+        android:visibility="invisible">
+
+        <Button
+            android:id="@+id/sendBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Send" 
+			android:background="@drawable/send_layout"
+			android:padding="8dp"
+			android:paddingBottom="8dp"
+			android:paddingLeft="8dp"
+			android:paddingRight="8dp"
+			android:layout_marginTop="@dimen/padding"
+            android:visibility="invisible"/>
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/sendBtn"
+            android:layout_alignBottom="@+id/sendBtn"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/sendBtn"
+            android:background="@drawable/reply_layout"
+            android:cursorVisible="true"
+            android:ems="10"
+            android:focusable="true"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="textMultiLine|textCapSentences"
+            android:maxLines="1"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            android:layout_weight="1"
+            android:hint="Write here"
+            android:paddingTop="5sp"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp"
+            android:paddingBottom="5sp"
+            android:textCursorDrawable="@null"
+            android:textColor="#000000" 
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/reply_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:text="Reply"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/right"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/reply_text"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/arrow_right" 
+      
+        />
+
+    <ImageView
+        android:id="@+id/left"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/reply_text"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/arrow_left"
+        
+         />
+
+</RelativeLayout>

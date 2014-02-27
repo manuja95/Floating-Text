@@ -1,0 +1,12 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true">
+        <shape android:padding="50dp"
+            android:shape="rectangle">
+            <gradient android:startColor="@color/sendDarkColor" android:centerColor="@color/sendDarkColor" android:endColor="@color/sendLightColor" android:angle="90"/>
+           <stroke android:width="2dip" android:color="#FFFFFF"/>
+            <corners android:radius="20dp" android:bottomLeftRadius="0dp" android:bottomRightRadius="0dp" />
+		</shape>
+    </item>
+    
+    <item android:drawable="@android:color/transparent" />
+</selector>
